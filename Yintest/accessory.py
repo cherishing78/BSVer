@@ -8,10 +8,6 @@ def Convergence(matrix):
 	delta=(np.abs(matrix).max(axis=0)).max(axis=0)
 	return delta
 
-def Mean(dataset):
-	mean=np.mean(dataset,axis=0)
-	return mean
-
 def Train(trainingset,label):
 	(imagenum,dim)=trainingset.shape
 	#Each column vector stands for a image.
